@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Google</title>
+    <title>Google Images</title>
 </head>
 <body>
     <header class="main-head">
@@ -23,8 +23,7 @@
             </div>
             <div class="top-right-style">
                 <ul class="nav-top-right">
-                    <li><a href="images.html">Image Search</a></li>
-                    <li><a href="advanced.html">Advanced Search</a></li>
+                    <li><a href="index.html">Go back to Google Search</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,10 +33,10 @@
             <img src="images/google.svg" width="300" height="200" alt="Google logo">
             
             <form class="form" action="https://google.com/search?">
+                <input type="hidden" name="tbm" value="isch">
                 <input type="text" class="form-input" name="q">
                 <div class="btns">
                     <input type="submit" class="submit-btn1 submit-btn" value="Google Search">
-                    <input type="submit" class="submit-btn2 submit-btn" value="I'm Feeling Lucky">
                 </div>
             </form>
         </section>
