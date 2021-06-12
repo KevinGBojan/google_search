@@ -9,9 +9,42 @@
     <link rel="shortcut icon" href="images/favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
     <title>Google Advanced Search</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="top-left">
+                <img src="images/google.svg" width="150" height="100" alt="Google logo">
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li><a href="index.html">Go back to Google Search</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1>Advanced Search</h1>
+    <h2>Find pages with ...</h2>
+    <form class="form" action="https://google.com/search?">
+        <div class="row1 row">
+            <label for="all-words">all these words:</label>
+            <input class="all-words" type="text" name="as_q">
+        </div>
+        <div class="row2 row">
+            <label for="">this exact word or phrase:</label>
+            <input type="text" name="as_epq">
+        </div>
+        <div class="row3 row">
+            <label for="">any of these words:</label>
+            <input type="text" name="as_oq">
+        </div>
+        <div class="row4 row">
+            <label for="">none of these words:</label>
+            <input type="text" name="as_eq">
+        </div>
+        <input type="submit" value="Google Search" class="submit-btn">
+    </form>
 </body>
 </html>
